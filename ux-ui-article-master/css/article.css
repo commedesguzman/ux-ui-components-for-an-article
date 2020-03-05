@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300|Roboto&display=swap');
+
+h1, h2   {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, ul   {
+    font-family: 'Dosis', sans-serif;
+}
