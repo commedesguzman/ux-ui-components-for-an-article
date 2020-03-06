@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis:300|Roboto&display=swap');
 
+
+
+body  {
+    margin: 0;
+    background-color: rgb(169, 212, 212);
+    background-image: radial-gradient(#fafafa 5%, transparent 20%);
+    background-position: 0 0, 2em, 2em;
+    background-size: 1.5em 1.5em;
+}
+
+header  {
+    background: rgb(233, 227, 195);
+ 
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
 h1, h2   {
     font-family: 'Roboto', sans-serif;
 }
@@ -8,3 +30,71 @@ h1, h2   {
 p, ul   {
     font-family: 'Dosis', sans-serif;
 }
+
+.logo  {
+    width: 8em;
+    float: left;
+    padding: 1em 5em;
+    i
+   
+    
+}
+
+.nav-bar  {
+    float: right;
+   
+
+}
+
+.nav-bar ul  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-right: 4em;
+    padding-top: 5em;
+    padding-right: 2em;
+    position: relative;
+
+    
+}
+
+.nav-bar a {
+    color: rgb(8, 134, 134);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+
+
+}
+
+
+.nav-bar a:hover  {
+    color: coral;
+}
+
+.nav-bar a::before {
+    content: '';
+    display: block;
+    height: .5em;
+    width: 100%;
+    background-color: rgb(4, 20, 4);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+
+
+}
+
+
+
+
+
+
+
+
