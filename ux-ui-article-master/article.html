@@ -38,9 +38,20 @@
         </article>
 
         <!-- put carousel here -->
-    <div class="carousel-controls" data-ride="carousel">
-        <div class="carousel-inner">
+        <div id="carousel-main-indicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-main-indicators" data-slide-to="1"></li>
 
+                <li data-target="#carousel-main-indicators" data-slide-to="2"></li>
+
+                <li data-target="#carousel-main-indicators" data-slide-to="3" class="active-carousel"></li>
+
+                <li data-target="#carousel-main-indicators" data-slide-to="4"></li>
+
+                <li data-target="#carousel-main-indicators" data-slide-to="5"></li>
+            </ol>
+
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="img/beignet1.jpg">
             </div>
@@ -61,9 +72,9 @@
                 <img src="img/beignet5.jpg">
             </div>
         
-            <button class="prev" type="button" alt="previous"></button>
+            <button class="prev" href="#carousel-main-indicators" type="button" alt="previous"></button>
 
-            <button class="next" type="button" alt="next"></button>
+            <button class="next" href="#carousel-main-indicators" type="button" alt="next"></button>
         </div>
     </div>
 
