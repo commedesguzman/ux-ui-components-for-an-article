@@ -36,7 +36,6 @@ p, ul   {
     float: left;
     padding: 1em 4em;
 
-    
 }
 
 .nav-bar  {
@@ -79,18 +78,11 @@ p, ul   {
     background-color: cornsilk;
     margin: 1em 2em;
     padding: 1em;
-    color: rgb(8, 68, 8);
+    color: rgb(8, 134, 134);
 
 }
 
-.history  {
-    background-color: cornsilk;
-    margin: 1em 2em;
-    padding: 1em;
-    color: rgb(8, 68, 8);
 
-
-}
 
 
 
