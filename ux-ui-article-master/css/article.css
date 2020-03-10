@@ -34,17 +34,16 @@ p, ul   {
 .logo  {
     width: 8em;
     float: left;
-    padding: 1em 5em;
-    i
-   
+    padding: 1em 4em;
+
     
 }
 
 .nav-bar  {
-    float: right;
-   
+    text-align: center; 
 
 }
+
 
 .nav-bar ul  {
     margin: 0;
@@ -55,12 +54,11 @@ p, ul   {
 
 .nav-bar li {
     display: inline-block;
-    margin-right: 4em;
+    margin-right: 2em;
     padding-top: 5em;
     padding-right: 2em;
     position: relative;
 
-    
 }
 
 .nav-bar a {
@@ -77,16 +75,19 @@ p, ul   {
     color: coral;
 }
 
-.nav-bar a::before {
-    content: '';
-    display: block;
-    height: .5em;
-    width: 100%;
-    background-color: rgb(4, 20, 4);
-    position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 250ms;
+.content  {
+    background-color: cornsilk;
+    margin: 1em 2em;
+    padding: 1em;
+    color: rgb(8, 68, 8);
+
+}
+
+.history  {
+    background-color: cornsilk;
+    margin: 1em 2em;
+    padding: 1em;
+    color: rgb(8, 68, 8);
 
 
 }
