@@ -19,9 +19,7 @@ header  {
     width: 100%;
     z-index:1; 
     
- 
 }
-
 
 
 h1, h2   {
@@ -34,7 +32,8 @@ p, ul   {
 
 .logo  {
     width: 8em;
-    float: left;
+    height: auto;
+
     padding: 1em 4em;
 
 }
@@ -42,9 +41,9 @@ p, ul   {
 .nav-bar  {
     text-align: center; 
     z-index: 500; 
+}
     
 
-}
 
 
 .nav-bar ul  {
@@ -147,24 +146,29 @@ p, ul   {
 }
 
 
-/* for desktops */
-@media (max-width: 1200px) { 
-    
-} 
 
 
 /* for laptops */
-@media (max-width: 991px) {
-
-} 
+@media (min-width: 1024px) {
+  
 
 /* for tablets */
-@media (min-width: 768px) and (max-width: 990px) {  
+@media (min-width: 768px) {
+    .nav-bar a {
+        font-size: .5em;
+    }
+
+    .logo  {
+        width: 4em;
+        height: auto;
+        
+    }
+     
 
 } 
 
 /* for cellphones */
-@media (max-width: 500px) { 
+@media (min-width: 500px) { 
  } 
 
 
