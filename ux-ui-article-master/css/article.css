@@ -147,6 +147,28 @@ p, ul   {
 }
 
 
+/* for desktops */
+@media (max-width: 1200px) { 
+    
+} 
+
+
+/* for laptops */
+@media (max-width: 991px) {
+
+} 
+
+/* for tablets */
+@media (min-width: 768px) and (max-width: 990px) {  
+
+} 
+
+/* for cellphones */
+@media (max-width: 500px) { 
+ } 
+
+
+
 
 
 
