@@ -13,15 +13,14 @@ body  {
 
 header  {
     background: rgb(233, 227, 195);
+    height: 10em;
+    width: 100%;
+    position: fixed;
+    
  
 }
 
-header::after {
-    content: '';
-    display: table;
-    clear: both;
 
-}
 
 h1, h2   {
     font-family: 'Roboto', sans-serif;
@@ -40,6 +39,7 @@ p, ul   {
 
 .nav-bar  {
     text-align: center; 
+    
 
 }
 
