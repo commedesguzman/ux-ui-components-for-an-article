@@ -83,8 +83,53 @@ p, ul   {
 
 }
 
+.carousel  {
+    position: relative;
+    top: 2em;
+    height: 50em;
+    width: 80%;
+    margin: 0;
+}
+
+
+.carousel-image  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    object-position: cover;
 
    
+}
+
+.carousel-container  {
+    position: relative;
+    padding: 1em;
+    height: 100%;
+
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel_slide  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 11em;
+    width: 100%;
+}
+
+.carousel-button  {
+    position: absolute;
+    background: transparent;
+}
+
+
+
     
 
 
