@@ -30,23 +30,24 @@ p, ul   {
     font-family: 'Dosis', sans-serif;
 }
 
-.logo  {
-    width: 8em;
-    height: auto;
 
-    padding: 1em 4em;
+.logo  {
+    float: left;
+    height: 8em;
+    width: auto;
+    padding: 1em 5em;
 
 }
 
 .nav-bar  {
     text-align: center; 
-    z-index: 500; 
+    z-index: 1; 
 }
     
 
 
-
 .nav-bar ul  {
+    list-style-image: -webkit-image-set();
     margin: 0;
     padding: 0;
     list-style: none;
@@ -79,6 +80,7 @@ p, ul   {
 
 .content  {
     background-color: cornsilk;
+    left: 2em;
     margin: 1em 2em;
     padding: 1em;
     color: rgb(8, 134, 134);
@@ -148,29 +150,40 @@ p, ul   {
 
 
 
-/* for laptops */
-@media (min-width: 1024px) {
-  
+/* 
+@media (min-width: 1025px) {
+    .nav-bar a {
+       
+    
+    
+    }
 
-/* for tablets */
+}   
+
+    
+
+
+
 @media (min-width: 768px) {
     .nav-bar a {
-        font-size: .5em;
-    }
-
-    .logo  {
-        width: 4em;
-        height: auto;
-        
-    }
      
-
+    
+    
+    }
+   
 } 
 
-/* for cellphones */
-@media (min-width: 500px) { 
- } 
 
+@media (min-width: 500px) { 
+    .nav-bar a {
+      
+    
+    
+    }
+
+    
+
+} 
 
 
 
