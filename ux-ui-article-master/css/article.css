@@ -102,8 +102,6 @@ p, ul   {
     margin-right: auto;
     width: 60%;
     object-fit: cover;
-
-   
 }
 
 .carousel-container  {
@@ -111,11 +109,9 @@ p, ul   {
     top: 4em;
     left: 14em;
     height: 100%;
-
 }
 
 .container {
-   
     padding: 0;
     margin: 0;
     list-style: none;
