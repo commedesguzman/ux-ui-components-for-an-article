@@ -14,10 +14,13 @@ body  {
 header  {
     background: rgb(233, 227, 195);
     position: fixed;
-    height: 10em;
     top: 0;
     width: 100%;
     z-index:1; 
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    box-sizing: border-box;
     
 }
 
@@ -32,10 +35,10 @@ p, ul   {
 
 
 .logo  {
-    float: left;
     height: 8em;
     width: auto;
-    padding: 1em 5em;
+
+   
 
 }
 
@@ -47,7 +50,6 @@ p, ul   {
 
 
 .nav-bar ul  {
-    list-style-image: -webkit-image-set();
     margin: 0;
     padding: 0;
     list-style: none;
@@ -75,6 +77,8 @@ p, ul   {
 
 .nav-bar a:hover  {
     color: #ff7f50;
+    
+
 }
 
 
@@ -97,11 +101,11 @@ p, ul   {
 
 
 .carousel-image  {
-    position: block;
+  
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    object-fit: cover;
+  
 
    
 }
@@ -150,13 +154,9 @@ p, ul   {
 
 
 
-/* 
+/*
 @media (min-width: 1025px) {
-    .nav-bar a {
-       
-    
-    
-    }
+ 
 
 }   
 
@@ -165,26 +165,19 @@ p, ul   {
 
 
 @media (min-width: 768px) {
-    .nav-bar a {
-     
-    
-    
-    }
+   
    
 } 
 
 
 @media (min-width: 500px) { 
-    .nav-bar a {
-      
-    
-    
-    }
+   
 
     
 
 } 
 
+*/
 
 
 
