@@ -68,8 +68,6 @@ p, ul   {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5em;
-
-
 }
 
 
@@ -97,7 +95,7 @@ p, ul   {
 
 
 .carousel-image  {
-    position: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
