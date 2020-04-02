@@ -8,6 +8,34 @@ $photos.addEventListener('click', (event) => {
     $photos.classList.toggle('carousel_slide')
 })
 */
+rollBtn.addEventListener (`click`, (event) => {
+
+  document.querySelector(`.carousel`).style.display = ("block");
+
+})  
+
+
+document.querySelector(`.imageResult`).innerHTML = (`<img id="num${randomNum}" class="numVis" src="img/dice${randomNum}.svg" alt="num${randomNum}">
+`);
+
+document.getElementById('up').addEventListener('click', function() {
+if ( randomNum !== 6 ) {
+  randomNum++;
+  document.querySelector(`.imageResult`).innerHTML = (`<img id="num${randomNum}" class="numVis" src="img/dice${randomNum}.svg" alt="num${randomNum}">
+`);
+}
+})
+
+
+document.getElementById('down').addEventListener('click', function() {
+if ( randomNum !== 1 ) {
+  randomNum--;
+  document.querySelector(`.imageResult`).innerHTML = (`<img id="num${randomNum}" class="numVis" src="img/dice${randomNum}.svg" alt="num${randomNum}">
+`);
+}
+
+})
+
 
 ////INFINITE SCROLLING//////
   
