@@ -14,8 +14,9 @@ rollBtn.addEventListener (`click`, (event) => {
 
 })  
 
+var randomNum = 1;
 
-document.querySelector(`.imageResult`).innerHTML = (`<img id="num${randomNum}" class="numVis" src="img/dice${randomNum}.svg" alt="num${randomNum}">
+document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_slide${randomNum}" class="carousel-image" src="img/beignet1.jpg" alt="beignet${randomNum}">
 `);
 
 document.getElementById('up').addEventListener('click', function() {
