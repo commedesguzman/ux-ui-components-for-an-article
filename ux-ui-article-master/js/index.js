@@ -22,7 +22,7 @@ document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_sl
 document.getElementById('up').addEventListener('click', function() {
 if ( randomNum !== 6 ) {
   randomNum++;
-  document.querySelector(`.imageResult`).innerHTML = (`<img id="num${randomNum}" class="numVis" src="img/dice${randomNum}.svg" alt="num${randomNum}">
+  document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_slide${randomNum}" class="carousel-image" src="img/beignet6.jpg" alt="beignet${randomNum}">
 `);
 }
 })
@@ -31,7 +31,7 @@ if ( randomNum !== 6 ) {
 document.getElementById('down').addEventListener('click', function() {
 if ( randomNum !== 1 ) {
   randomNum--;
-  document.querySelector(`.imageResult`).innerHTML = (`<img id="num${randomNum}" class="numVis" src="img/dice${randomNum}.svg" alt="num${randomNum}">
+  document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_slide${randomNum}" class="carousel-image" src="img/beignet1.jpg" alt="beignet${randomNum}">
 `);
 }
 
