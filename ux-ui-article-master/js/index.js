@@ -8,7 +8,7 @@ $photos.addEventListener('click', (event) => {
     $photos.classList.toggle('carousel_slide')
 })
 */
-/*
+
 rollBtn.addEventListener (`click`, (event) => {
 
   document.querySelector(`.carousel`).style.display = ("block");
@@ -52,9 +52,18 @@ let winH = document.documentElement.clientHeight
   
       // Add new content when we hit the bottom
       document.querySelector('#carousel').innerHTML += `
-        <li class="carousel_slide">
-          
-        </li>
+      <ul class="recipe">
+      <li>1 cup lukewarm water</li>
+      <li>1/4 cup sugar (granulated)</li>
+      <li>1/2 teaspoon salt</li>
+      <li>1 large egg, room temperature and beaten</li>
+      <li>2 tablespoons butter, softened</li>
+      <li>1/2 cup evaporated milk</li>
+      <li>4 cups flour (bread flour or all-purpose)</li>
+      <li>3 teaspoons instant active dry yeast</li>
+      <li>Vegetable oil for deep frying</li>
+      <li>Powdered sugar for dusting</li>
+  </ul>
         `
     }
  
@@ -62,7 +71,7 @@ let winH = document.documentElement.clientHeight
   
   window.addEventListener('load', theStateOfTheInterface)
   window.addEventListener('scroll', theStateOfTheInterface)
-  window.addEventListener('resize', theStateOfTheInterface)*/
+  window.addEventListener('resize', theStateOfTheInterface)
   
 
 
