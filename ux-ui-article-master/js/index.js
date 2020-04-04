@@ -9,19 +9,19 @@ var randomNum = 1;
 document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_slide${randomNum}" class="carousel-image" src="img/beignet1.jpg" alt="beignet${randomNum}">
 `);
 
-document.getElementById('up').addEventListener('click', function() {
-if ( randomNum !== 6 ) {
+document.getElementById('carousel-button-l').addEventListener('click', function() {
+if ( randomNum !== 1 ) {
   randomNum++;
-  document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_slide${randomNum}" class="carousel-image" src="img/beignet6.jpg" alt="beignet${randomNum}">
+  document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_slide${randomNum}" class="carousel-image" src="img/beignet1.jpg" alt="beignet${randomNum}">
 `);
 }
 })
 
 
-document.getElementById('down').addEventListener('click', function() {
-if ( randomNum !== 1 ) {
+document.getElementById('carousel-button-r').addEventListener('click', function() {
+if ( randomNum !== 6 ) {
   randomNum--;
-  document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_slide${randomNum}" class="carousel-image" src="img/beignet1.jpg" alt="beignet${randomNum}">
+  document.querySelector(`.carousel_container`).innerHTML = (`<img id="carousel_slide${randomNum}" class="carousel-image" src="img/beignet6.jpg" alt="beignet${randomNum}">
 `);
 }
 
@@ -41,7 +41,7 @@ let winH = document.documentElement.clientHeight
   
       // Add new content when we hit the bottom
       document.querySelector('.content').innerHTML += `
-    <article class="content">
+    <article class="content" id="beignets">
       <h1>BEIGNETS</h1>
             <p>
                 The word beignet (pronounced ben-YAY) comes from the early Celtic word bigne meaning “to raise.”  It is also French for “fritter.” Beignets, a New Orleans specialty, are fried, raised pieces of yeast dough, usually about 2 inches in diameter or 2 inches square.  After being fried, they are sprinkled with sugar or coated with various icings.
