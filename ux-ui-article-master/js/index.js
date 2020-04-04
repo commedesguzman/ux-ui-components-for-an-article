@@ -8,6 +8,7 @@ $photos.addEventListener('click', (event) => {
     $photos.classList.toggle('carousel_slide')
 })
 */
+/*
 rollBtn.addEventListener (`click`, (event) => {
 
   document.querySelector(`.carousel`).style.display = ("block");
@@ -56,10 +57,38 @@ let winH = document.documentElement.clientHeight
         </li>
         `
     }
-  }
+ 
   
   
   window.addEventListener('load', theStateOfTheInterface)
   window.addEventListener('scroll', theStateOfTheInterface)
-  window.addEventListener('resize', theStateOfTheInterface)
+  window.addEventListener('resize', theStateOfTheInterface)*/
   
+
+
+  ///Progress Bar///
+
+let $doc = document.documentElement
+let $win = window
+let $container = document.querySelector('.myProgress')
+let $bar = document.querySelector('.myBar')
+
+
+window.addEventListener('scroll', event =>{
+
+  let progress = document.querySelector('.myBar');
+  let scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  let scrolled = window.scrollY;
+
+  if (scrollable > 0){
+    percentageScrollable = Math.ceil(scrolled / scrollable * 100);
+
+  }
+
+  progress.style.width = `$(percentageScrolled)%`;
+
+  console.log(percentageScrolled);
+
+})
+
+
