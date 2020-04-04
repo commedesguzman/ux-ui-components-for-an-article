@@ -51,19 +51,17 @@ let winH = document.documentElement.clientHeight
       // You have definitely hit the bottom
   
       // Add new content when we hit the bottom
-      document.querySelector('#carousel').innerHTML += `
-      <ul class="recipe">
-      <li>1 cup lukewarm water</li>
-      <li>1/4 cup sugar (granulated)</li>
-      <li>1/2 teaspoon salt</li>
-      <li>1 large egg, room temperature and beaten</li>
-      <li>2 tablespoons butter, softened</li>
-      <li>1/2 cup evaporated milk</li>
-      <li>4 cups flour (bread flour or all-purpose)</li>
-      <li>3 teaspoons instant active dry yeast</li>
-      <li>Vegetable oil for deep frying</li>
-      <li>Powdered sugar for dusting</li>
-  </ul>
+      document.querySelector('.content').innerHTML += `
+
+      <h2>RELATED RECIPES (IN NEW ORELANS)</h2>
+            <ul class="related">
+                <li>Gumbo</li>
+                <li>Crawfish Etouffee</li>
+                <li>Jambalaya</li>
+                <li>Red Beans and Rice</li>
+                <li>Muffaletta</li>
+            </ul>
+
         `
     }
  
