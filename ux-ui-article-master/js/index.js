@@ -1,14 +1,3 @@
-////STACKED CAROUSEL//////
-
-/*
-let $photos = document.querySelector('.container')
-
-
-$photos.addEventListener('click', (event) => {
-    $photos.classList.toggle('carousel_slide')
-})
-*/
-
 rollBtn.addEventListener (`click`, (event) => {
 
   document.querySelector(`.carousel`).style.display = ("block");
@@ -52,21 +41,16 @@ let winH = document.documentElement.clientHeight
   
       // Add new content when we hit the bottom
       document.querySelector('.content').innerHTML += `
+    <article class="content">
+      <h1>BEIGNETS</h1>
+            <p>
+                The word beignet (pronounced ben-YAY) comes from the early Celtic word bigne meaning “to raise.”  It is also French for “fritter.” Beignets, a New Orleans specialty, are fried, raised pieces of yeast dough, usually about 2 inches in diameter or 2 inches square.  After being fried, they are sprinkled with sugar or coated with various icings.
 
-      <h2>RELATED RECIPES (IN NEW ORELANS)</h2>
-            <ul class="related">
-                <li>Gumbo</li>
-                <li>Crawfish Etouffee</li>
-                <li>Jambalaya</li>
-                <li>Red Beans and Rice</li>
-                <li>Muffaletta</li>
-            </ul>
-
+                Beignets have been associated with Mardi Gras in France since at least the 16th century, and many recipes for beignets appear in French works around the same time.
+            </p>
+      </article>
         `
     }
- 
-  
-  
   window.addEventListener('load', theStateOfTheInterface)
   window.addEventListener('scroll', theStateOfTheInterface)
   window.addEventListener('resize', theStateOfTheInterface)
