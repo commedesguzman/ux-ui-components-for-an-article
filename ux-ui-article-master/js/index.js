@@ -1,4 +1,25 @@
-rollBtn.addEventListener (`click`, (event) => {
+const progressContainer = document.querySelector(".progress-fill");
+
+  window.addEventListener("scroll", () => {
+    //console.log("scroll down")
+  
+    const roomscroll = document.documentElement.scrollHeight - window.innerHeight;
+  
+    const totalscroll = window.scrollY;
+  
+    let percentageRoomscroll = 100;
+  
+    // if user can scroll down
+    console.log(roomscroll)
+    if (roomscroll > 0) {
+      percentageRoomscroll = Math.ceil(totalscroll / roomscroll * 100);
+    }
+  
+  
+    progressContainer.style.width = `${percentageRoomscroll}%`;
+  }); 
+
+/*rollBtn.addEventListener (`click`, (event) => {
 
   document.querySelector(`.carousel`).style.display = ("block");
 
@@ -55,31 +76,10 @@ let winH = document.documentElement.clientHeight
   window.addEventListener('scroll', theStateOfTheInterface)
   window.addEventListener('resize', theStateOfTheInterface)
   
-
+*/
 
   ///Progress Bar///
 
-let $doc = document.documentElement
-let $win = window
-let $container = document.querySelector('.myProgress')
-let $bar = document.querySelector('.myBar')
 
 
-window.addEventListener('scroll', event =>{
-
-  let progress = document.querySelector('.myBar');
-  let scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  let scrolled = window.scrollY;
-
-  if (scrollable > 0){
-    percentageScrollable = Math.ceil(scrolled / scrollable * 100);
-
-  }
-
-  progress.style.width = `$(percentageScrolled)%`;
-
-  console.log(percentageScrolled);
-
-})
-
-
+  
