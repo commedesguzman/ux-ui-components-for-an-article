@@ -49,9 +49,9 @@ p, ul   {
     float: left;
     height: 8em;
     width: auto;
-    padding: 1em 5em;
+    padding: 1.5em 5em;
     transform: rotate(360deg);
-    transition-duration: 1s;
+    transition-duration: 2s;
 
 }
 
@@ -126,6 +126,7 @@ p, ul   {
     padding: 0;
     margin: 0;
     list-style: none;
+    
 }
 
 .carousel_slide  {
@@ -134,6 +135,11 @@ p, ul   {
     bottom: 0;
     /*left: 11em;*/
     width: 100%;
+    opacity: 0.1;
+}
+
+#shown{
+    opacity: 1;
 }
 
 .carousel-button-l  {
