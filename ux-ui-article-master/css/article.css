@@ -101,7 +101,7 @@ p, ul   {
 
 }
 
-.active {
+a.active {
     color: #ff7f50;
 
 }

@@ -21,13 +21,12 @@ window.addEventListener("scroll", () => {
 }); 
 
 
-
 //SCROLLSPY TO HIGHLIGHT NAV LINKS WHEN SCROLLING
 
 (function() {
   'use strict';
 
-    var section = document.querySelectorAll(".container");
+    var section = document.querySelectorAll('.content');
     var sections = {};
     var i = 0;
 
@@ -41,17 +40,73 @@ window.onscroll = function() {
     for (i in sections) {
       if (sections[i] <= scrollPosition) {
         document.querySelector('.active').setAttribute('class', '');
+        console.log(i);
+        debugger;
         document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
       }
     }
   };
 })();
 
+/*
+/// CARROUSEL///
+
+let $container = document.querySelector('.container')
+
+let setFirstSlide = () => {
+  
+  let $carousel_slide = document.querySelector('.carousel_slide:first-child');
+  $carousel_slide.classList.add('current')
+
+}
+
+let setLastSlide = () => {
+
+
+} 
+let unsetSlides = () => {
+
+} 
+let prevSlide = () => {
+
+} 
+let nextSlide = () => {
+  //Find the current element
+  let $curr = document.querySelector('.current')
+
+  //Remove the .current class
+  $curr.classList.remove('current')
+
+  //Go to he next sibling element
+  let $next = $curr.nextElementSibling
+
+  if ($next != null) {
+    //Add the current class
+    $next.classList.add('current')
+
+  } else {
+      //go back to the beggining
+      setLastSlide = () => {
+
+  }
+
+  
+ //When the interfe has fully loaded
+let windowLoaded = () => {
+  setFirstSlide()
+
+  let $nextBtn = document.querySelector('#next')
+  $nextBtn.addEventListener('click', nextSlide)
+} 
+
+
+//Event Listener
+window.addEventListener('load' , windowLoaded)
 
 
 
 /* 
-//CARROUSEL
+//Jullia´s CARROUSEL
 
 rollBtn.addEventListener (`click`, (event) => {
 
@@ -83,6 +138,7 @@ if ( randomNum !== 1 ) {
 })
 
 
+
 ////INFINITE SCROLLING//////
   
 
@@ -110,7 +166,4 @@ let winH = document.documentElement.clientHeight
   window.addEventListener('scroll', theStateOfTheInterface)
   window.addEventListener('resize', theStateOfTheInterface)
   
-*/
-  
- 
-
+  */
