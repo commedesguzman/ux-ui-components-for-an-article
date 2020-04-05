@@ -38,7 +38,7 @@ window.onscroll = function() {
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
     for (i in sections) {
-      if (sections[i] <= scrollPosition) {
+      if (sections[i] <= scrollPosition + 160) {
         document.querySelector('.active').setAttribute('class', '');
         console.log(i);
         debugger;
