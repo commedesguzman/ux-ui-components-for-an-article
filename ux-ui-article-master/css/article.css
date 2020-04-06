@@ -50,6 +50,9 @@ p, ul   {
     height: 8em;
     width: auto;
     padding: 1em 5em;
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    transition-duration: 2s;
 
 }
 
@@ -86,6 +89,10 @@ p, ul   {
 
 
 .nav-bar a:hover  {
+    color: #ff7f50;
+}
+
+a.active  {
     color: #ff7f50;
 }
 .content  {
